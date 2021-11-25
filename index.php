@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/Menu_res.css">
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/prin.css">
-    <title>Document</title>
+    <title>prueba rapida</title>
 </head>
 <body>
 <!-- Menu de navegacion -->
