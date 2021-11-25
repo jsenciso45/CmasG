@@ -12,20 +12,7 @@
 </head>
 <body>
 <!-- Menu de navegacion -->
-<div class="Mn_nav">
-    <nav class="menu">
-        <label for="" class="logo">ComercioMas</label>
-        <ul class="menu_items">
-            <li><a href="#">Recomendado</a></li>
-            <li><a href="#">Crea Tu Cuenta</a></li>
-            <li><a href="#">Ingresar</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-        <span class="btn_menu">
-            <i class="fa fa-bars"></i>
-        </span>
-    </nav>
-</div>
+
 
 <!-- Galeria slider publicidad -->
 <div class="contenedor">
