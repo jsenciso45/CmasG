@@ -7,8 +7,8 @@
     <!-- Links de estilos -->
     <link rel="stylesheet" href="estilos/Menu_res.css">
     <link rel="stylesheet" href="estilos/normalize.css">
-    <link rel="stylesheet" href="estilos/prin.css">
-    <title>prueba rapida</title>
+    <link rel="stylesheet" href="estilos/pricipal.css">
+    <title>Document</title>
 </head>
 <body>
 <!-- Menu de navegacion -->
@@ -17,7 +17,7 @@
         <label for="" class="logo">ComercioMas</label>
         <ul class="menu_items">
             <li><a href="#">Recomendado</a></li>
-            <li><a href="#">Crea Tu Cuenta</a></li>
+            <li><a href="vistas/Fr_reg.php">Crea Tu Cuenta</a></li>
             <li><a href="#">Ingresar</a></li>
             <li><a href="#">Contactos</a></li>
         </ul>
@@ -50,15 +50,6 @@
         </section>
         <section class="contenido-slider">
             <div>
-                <h1>Registrate hoy con tu usuario</h1>
-                <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
-                <a href="vistas/Fr_reg.php">Registrarse</a>
-            </div>
-            <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
-    
-        </section>
-        <section class="contenido-slider">
-            <div>
                 <h1>Obten beneficios para tu Negocio</h1>
                 <h2>Somos una plataforma de tiendas online que te ayuda expandir tus horizontes de mercadeo.</h2>
                 <a href="#">Registrar Mi Local</a>
@@ -66,7 +57,15 @@
             <img src="imagenes/photoroom.png" alt="">
     
         </section>
-        
+        <section class="contenido-slider">
+            <div>
+                <h1>Registrate hoy con tu usuario</h1>
+                <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
+                <a href="vistas/Fr_reg.php">Registrarse</a>
+            </div>
+            <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
+    
+        </section>
     </div>
 </div>
 
@@ -149,5 +148,5 @@
 <!-- Links de funcion javaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
 <script src="Fn_js/menu.js"></script>
-<script src="Fn_js/Gal.js"></script>
+<script src="Fn_js/Galeria.js"></script>
 </html>

@@ -1,3 +1,4 @@
+<!-- Coneccion a base de datos -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +8,7 @@
     <!-- Links de estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../estilos/normalize.css">
-    <link rel="stylesheet" href="../estilos/Fr_us.css">
+    <link rel="stylesheet" href="../estilos/For_us.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,10 +16,11 @@
 <main>
     <h1>ComercioMas</h1>
     <h4>Registrate para conocer los mejores locales de la localidad de soacha</h4>
-    <form action="" class="formulario" id="formulario">
+    <h4>Los campo que tengan * son Obligatorios</h4>
+    <form action="../controlador/Rg_usuario.php" method="POST" class="formulario" id="formulario">
         <!-- Nombre de usuario -->
         <div class="formulario__grupo" id="grupo__usuario">
-            <label for="usuario" class="formulario__label">Usuario</label>
+            <label for="usuario" class="formulario__label">Usuario *</label>
             <div class="formulario__grupo-input"> 
                 <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario123" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -28,7 +30,7 @@
 
         <!-- Nombres de Persona -->
         <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Nombre</label>
+            <label for="nombre" class="formulario__label">Nombre *</label>
             <div class="formulario__grupo-input">
                 <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre Ejemplo" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -39,7 +41,7 @@
         <!-- Apellidos de personas-->
 
         <div class="formulario__grupo" id="grupo__apellidos">
-            <label for="apellidos" class="formulario__label">Apellidos</label>
+            <label for="apellidos" class="formulario__label">Apellidos *</label>
             <div class="formulario__grupo-input">
                 <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Apellido ejemplo" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -50,7 +52,7 @@
         <!-- Numero de telefono -->
 
         <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Teléfono</label>
+            <label for="telefono" class="formulario__label">Teléfono *</label>
             <div class="formulario__grupo-input">
                 <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="123456789" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -63,7 +65,7 @@
         <div class="formulario__grupo" id="grupo__telefono">
             <label for="telefono" class="formulario__label">Teléfono Secundario</label>
             <div class="formulario__grupo-input">
-                <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+                <input type="number" class="formulario__input" name="telefono2" id="telefono" placeholder="123456789">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
@@ -72,7 +74,7 @@
         <!-- Correo electronico -->
 
         <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <label for="correo" class="formulario__label">Correo Electrónico *</label>
             <div class="formulario__grupo-input">
                 <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correoEjemplo01@gmail.com" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -83,9 +85,9 @@
         <!-- Contraseña de Usuario -->
 
         <div class="formulario__grupo" id="grupo__password">
-            <label for="password" class="formulario__label">Contraseña</label>
+            <label for="password" class="formulario__label">Contraseña *</label>
             <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password" required>
+                <input type="password" class="formulario__input" name="password" placeholder="Contraseña" id="password" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
@@ -94,9 +96,9 @@
         <!-- Confirmar Contraseña -->
 
         <div class="formulario__grupo" id="grupo__password2">
-            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+            <label for="password2" class="formulario__label">Repetir Contraseña *</label>
             <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="password2" id="password2" required>
+                <input type="text" class="formulario__input" name="password2" placeholder="Confirmar contraseña" id="password2" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
