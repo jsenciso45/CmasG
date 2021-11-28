@@ -1,5 +1,18 @@
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
+
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+
+// Declaracion de Expresioness
+const formulario = document.getElementById('Form');
+const inputs = document.querySelectorAll('#Form input');
 
 const expresiones = {
     usuario: /^[a-zA-Z0-9\_\-]{4,15}$/, // Letras, numeros, guion y guion_bajo
@@ -9,6 +22,62 @@ const expresiones = {
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,10}$/ // 7 a 10 numeros.
 }
+
+//FUNCIONES
+
+function anchoPage() {
+
+    if (window.innerWidth > 850) {
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    } else {
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";
+    }
+}
+
+anchoPage();
+
+
+function iniciarSesion() {
+    if (window.innerWidth > 850) {
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "10px";
+        formulario_register.style.display = "none";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.opacity = "0";
+    } else {
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "none";
+    }
+}
+
+function register() {
+    if (window.innerWidth > 850) {
+        formulario_register.style.display = "block";
+        contenedor_login_register.style.left = "410px";
+        formulario_login.style.display = "none";
+        caja_trasera_register.style.opacity = "0";
+        caja_trasera_login.style.opacity = "1";
+    } else {
+        formulario_register.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_login.style.display = "none";
+        caja_trasera_register.style.display = "none";
+        caja_trasera_login.style.display = "block";
+        caja_trasera_login.style.opacity = "1";
+    }
+}
+
+
+// Validacion de datos de Registro
 
 const campos = {
     usuario: false,
@@ -91,24 +160,4 @@ const validarPassword2 = () => {
 inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
-});
-
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const terminos = document.getElementById('terminos');
-    if (campos.usuario && campos.apellidos && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
-        formulario.reset();
-
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-        }, 5000);
-
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
-        });
-    } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    }
 });

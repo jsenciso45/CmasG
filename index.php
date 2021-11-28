@@ -17,8 +17,8 @@
         <label for="" class="logo">ComercioMas</label>
         <ul class="menu_items">
             <li><a href="#">Recomendado</a></li>
-            <li><a href="vistas/Fr_reg.php">Crea Tu Cuenta</a></li>
-            <li><a href="#">Ingresar</a></li>
+            <li><a href="vistas/Fr_Inicio.php">Crea Tu Cuenta</a></li>
+            <li><a href="#">Iniciar Sesion</a></li>
             <li><a href="#">Contactos</a></li>
         </ul>
         <span class="btn_menu">
@@ -34,7 +34,7 @@
             <div>
                 <h1>Registrate hoy con tu usuario</h1>
                 <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
-                <a href="vistas/Fr_reg.php">Registrarse</a>
+                <a href="vistas/Fr_Inicio.php">Registrarse</a>
             </div>
             <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
     
