@@ -17,7 +17,7 @@
         <label for="" class="logo">ComercioMas</label>
         <ul class="menu_items">
             <li><a href="#">Recomendado</a></li>
-            <li><a href="vistas/Fr_Inicio.php">Crea Tu Cuenta</a></li>
+            <li><a href="Vistas/Fr_Inicio.php">Crea Tu Cuenta</a></li>
             <li><a href="#">Iniciar Sesion</a></li>
             <li><a href="#">Contactos</a></li>
         </ul>
@@ -34,7 +34,7 @@
             <div>
                 <h1>Registrate hoy con tu usuario</h1>
                 <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
-                <a href="vistas/Fr_Inicio.php">Registrarse</a>
+                <a href="Vistas/Fr_Inicio.php">Registrarse</a>
             </div>
             <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
     
@@ -43,7 +43,7 @@
             <div>
                <h1>¿Quieres Expandir mas su Negocio?</h1>
                 <h2>Incrementa tus ventas, llega a miles de usuarios y muestra tus productos de manera llamativa registrando su Negocio</h2>
-                <a href="#">Registrar Mi Negocio</a>
+                <a href="#">Registrar Mi Negocio</az>
             </div>
             <img src="imagenes/tienda-online-calidad.png" alt="">
     
