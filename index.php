@@ -7,14 +7,14 @@
     <!-- Links de estilos -->
     <link rel="stylesheet" href="estilos/Menu_res.css">
     <link rel="stylesheet" href="estilos/normalize.css">
-    <link rel="stylesheet" href="estilos/pricipal.css">
+    <link rel="stylesheet" href="estilos/cajas.css">
     <title>Document</title>
 </head>
 <body>
 <!-- Menu de navegacion -->
 <div class="Mn_nav">
     <nav class="menu">
-        <label for="" class="logo">ComercioMas</label>
+        <label for="" class="logo"><h1 class="heading">Comercio<span>Mas</span><span>G</span></h1></label>
         <ul class="menu_items">
             <li><a href="#">Recomendado</a></li>
             <li><a href="Vistas/Fr_Inicio.php">Crea Tu Cuenta</a></li>
@@ -28,49 +28,13 @@
 </div>
 
 <!-- Galeria slider publicidad -->
-<div class="contenedor">
-    <div class="slider-contenedor">
-        <section class="contenido-slider">
-            <div>
-                <h1>Registrate hoy con tu usuario</h1>
-                <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
-                <a href="Vistas/Fr_Inicio.php">Registrarse</a>
-            </div>
-            <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
-    
-        </section>
-        <section class="contenido-slider">
-            <div>
-               <h1>¿Quieres Expandir mas su Negocio?</h1>
-                <h2>Incrementa tus ventas, llega a miles de usuarios y muestra tus productos de manera llamativa registrando su Negocio</h2>
-                <a href="#">Registrar Mi Negocio</az>
-            </div>
-            <img src="imagenes/tienda-online-calidad.png" alt="">
-    
-        </section>
-        <section class="contenido-slider">
-            <div>
-                <h1>Obten beneficios para tu Negocio</h1>
-                <h2>Somos una plataforma de tiendas online que te ayuda expandir tus horizontes de mercadeo.</h2>
-                <a href="#">Registrar Mi Local</a>
-            </div>
-            <img src="imagenes/photoroom.png" alt="">
-    
-        </section>
-        <section class="contenido-slider">
-            <div>
-                <h1>Registrate hoy con tu usuario</h1>
-                <h2>Encuentra lo que necesites de manera eficiente y sencilla.</h2>
-                <a href="vistas/Fr_reg.php">Registrarse</a>
-            </div>
-            <img src="imagenes/kisspng-network-operations-center-network-monitoring-manag-analyst-5acc160d96ee83.2986819115233244296182.png" alt="">
-    
-        </section>
-    </div>
-</div>
+
+<!-- fin slider -->
+
 
 
 <!-- Tarjetas de publicidad -->
+<div class="caja-uno">
 <section class="card">
     <div class="card__perfil">
         <div class="card__nombre">
@@ -123,6 +87,7 @@
         </div>
     </div>
 </section>
+</div>
     
 
 <!-- Barra de busqueda de comercios -->
