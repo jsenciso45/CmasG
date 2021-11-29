@@ -1,16 +1,18 @@
 <?php
 
-function conectar(){
-    $user='root';
-    $contra='';
-    $server='localhost';
-    $bd='comercioReg';
+class conexion{
+//    Conexion a la base de datos
+    public static function conectar(){
+        try {
 
-    $cone=mysqly_connect($server,$user,$contra) or die ("Error al conectar la base de datos".mysql_error());
+            $cn =new PDO("mysql:host=localhost;dbname=comerciomas","root","");
 
-    mysql_select_db($bd,$cone);
+            return $cn;
 
-    return $cone;
+        } catch (PDOException $ex) {
+
+            die("error en la conexion ".$ex->getMessage());
+
+        }
+    }
 }
-
-?>
